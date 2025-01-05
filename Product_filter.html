@@ -1,0 +1,64 @@
+<style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background: #f3f4f6;
+      padding: 20px;
+    }
+  
+    h1 {
+      color: #333;
+    }
+  
+    #categoryButtons {
+      margin: 20px 0;
+    }
+  
+    .filterButton {
+      padding: 10px 20px;
+      margin: 5px;
+      border: none;
+      border-radius: 5px;
+      background-color: #007bff;
+      color: white;
+      cursor: pointer;
+      font-size: 14px;
+    }
+  
+    .filterButton:hover {
+      background-color: #0056b3;
+    }
+  
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+  
+    li {
+      padding: 10px;
+      border: 1px solid #ddd;
+      margin: 5px 0;
+      border-radius: 5px;
+      background-color: #fff;
+    }
+  </style>
+  
+<div>
+    <h1>Product Filter</h1>
+    <div id="categoryButtons">
+      <button class="filterButton" data-category="Electronics">Electronics</button>
+      <button class="filterButton" data-category="Clothing">Clothing</button>
+      <button class="filterButton" data-category="Groceries">Groceries</button>
+      <button class="filterButton" data-category="All">All</button>
+    </div>
+    <ul id="productList">
+      <li data-category="Electronics">Smartphone</li>
+      <li data-category="Clothing">T-Shirt</li>
+      <li data-category="Groceries">Apple</li>
+      <li data-category="Electronics">Laptop</li>
+      <li data-category="Clothing">Jeans</li>
+      <li data-category="Groceries">Milk</li>
+    </ul>
+  </div>
+  <script src="Product_filter.js"></script>
+  
